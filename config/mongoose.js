@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1/Hospital1_Api');
+mongoose.connect('mongodb://127.0.0.1:27017/Hospital1_Api');
 const db = mongoose.connection;
 
 db.on('error',console.error.bind(console,'Error connecting to the db'));
